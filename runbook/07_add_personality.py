@@ -181,7 +181,7 @@ class AIAgent:
         ]
 
         while True:
-            try:
+            try:#加入了系统提示词。
                 response = self.client.messages.create(
                     model="claude-sonnet-4-5-20250929",
                     max_tokens=4096,
